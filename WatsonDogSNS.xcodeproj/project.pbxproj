@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		820C50202281B997002B223F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C501F2281B997002B223F /* AppDelegate.swift */; };
+		820C50222281B997002B223F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C50212281B997002B223F /* ViewController.swift */; };
+		820C50252281B997002B223F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820C50232281B997002B223F /* Main.storyboard */; };
+		820C50272281B999002B223F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820C50262281B999002B223F /* Assets.xcassets */; };
+		820C502A2281B999002B223F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820C50282281B999002B223F /* LaunchScreen.storyboard */; };
+		820C50352281B999002B223F /* WatsonDogSNSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C50342281B999002B223F /* WatsonDogSNSTests.swift */; };
+		820C50402281B999002B223F /* WatsonDogSNSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C503F2281B999002B223F /* WatsonDogSNSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		820C50312281B999002B223F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820C50142281B997002B223F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 820C501B2281B997002B223F;
+			remoteInfo = WatsonDogSNS;
+		};
+		820C503C2281B999002B223F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820C50142281B997002B223F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 820C501B2281B997002B223F;
+			remoteInfo = WatsonDogSNS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		820C501C2281B997002B223F /* WatsonDogSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonDogSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		820C501F2281B997002B223F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		820C50212281B997002B223F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		820C50242281B997002B223F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		820C50262281B999002B223F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		820C50292281B999002B223F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		820C502B2281B999002B223F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		820C50302281B999002B223F /* WatsonDogSNSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatsonDogSNSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		820C50342281B999002B223F /* WatsonDogSNSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonDogSNSTests.swift; sourceTree = "<group>"; };
+		820C50362281B999002B223F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		820C503B2281B999002B223F /* WatsonDogSNSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatsonDogSNSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		820C503F2281B999002B223F /* WatsonDogSNSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonDogSNSUITests.swift; sourceTree = "<group>"; };
+		820C50412281B999002B223F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		820C50192281B997002B223F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820C502D2281B999002B223F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820C50382281B999002B223F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		820C50132281B997002B223F = {
+			isa = PBXGroup;
+			children = (
+				820C501E2281B997002B223F /* WatsonDogSNS */,
+				820C50332281B999002B223F /* WatsonDogSNSTests */,
+				820C503E2281B999002B223F /* WatsonDogSNSUITests */,
+				820C501D2281B997002B223F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		820C501D2281B997002B223F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				820C501C2281B997002B223F /* WatsonDogSNS.app */,
+				820C50302281B999002B223F /* WatsonDogSNSTests.xctest */,
+				820C503B2281B999002B223F /* WatsonDogSNSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		820C501E2281B997002B223F /* WatsonDogSNS */ = {
+			isa = PBXGroup;
+			children = (
+				820C501F2281B997002B223F /* AppDelegate.swift */,
+				820C50212281B997002B223F /* ViewController.swift */,
+				820C50232281B997002B223F /* Main.storyboard */,
+				820C50262281B999002B223F /* Assets.xcassets */,
+				820C50282281B999002B223F /* LaunchScreen.storyboard */,
+				820C502B2281B999002B223F /* Info.plist */,
+			);
+			path = WatsonDogSNS;
+			sourceTree = "<group>";
+		};
+		820C50332281B999002B223F /* WatsonDogSNSTests */ = {
+			isa = PBXGroup;
+			children = (
+				820C50342281B999002B223F /* WatsonDogSNSTests.swift */,
+				820C50362281B999002B223F /* Info.plist */,
+			);
+			path = WatsonDogSNSTests;
+			sourceTree = "<group>";
+		};
+		820C503E2281B999002B223F /* WatsonDogSNSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				820C503F2281B999002B223F /* WatsonDogSNSUITests.swift */,
+				820C50412281B999002B223F /* Info.plist */,
+			);
+			path = WatsonDogSNSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		820C501B2281B997002B223F /* WatsonDogSNS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 820C50442281B999002B223F /* Build configuration list for PBXNativeTarget "WatsonDogSNS" */;
+			buildPhases = (
+				820C50182281B997002B223F /* Sources */,
+				820C50192281B997002B223F /* Frameworks */,
+				820C501A2281B997002B223F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatsonDogSNS;
+			productName = WatsonDogSNS;
+			productReference = 820C501C2281B997002B223F /* WatsonDogSNS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		820C502F2281B999002B223F /* WatsonDogSNSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 820C50472281B999002B223F /* Build configuration list for PBXNativeTarget "WatsonDogSNSTests" */;
+			buildPhases = (
+				820C502C2281B999002B223F /* Sources */,
+				820C502D2281B999002B223F /* Frameworks */,
+				820C502E2281B999002B223F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				820C50322281B999002B223F /* PBXTargetDependency */,
+			);
+			name = WatsonDogSNSTests;
+			productName = WatsonDogSNSTests;
+			productReference = 820C50302281B999002B223F /* WatsonDogSNSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		820C503A2281B999002B223F /* WatsonDogSNSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 820C504A2281B999002B223F /* Build configuration list for PBXNativeTarget "WatsonDogSNSUITests" */;
+			buildPhases = (
+				820C50372281B999002B223F /* Sources */,
+				820C50382281B999002B223F /* Frameworks */,
+				820C50392281B999002B223F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				820C503D2281B999002B223F /* PBXTargetDependency */,
+			);
+			name = WatsonDogSNSUITests;
+			productName = WatsonDogSNSUITests;
+			productReference = 820C503B2281B999002B223F /* WatsonDogSNSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		820C50142281B997002B223F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Kiyoto Ryuman";
+				TargetAttributes = {
+					820C501B2281B997002B223F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					820C502F2281B999002B223F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 820C501B2281B997002B223F;
+					};
+					820C503A2281B999002B223F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 820C501B2281B997002B223F;
+					};
+				};
+			};
+			buildConfigurationList = 820C50172281B997002B223F /* Build configuration list for PBXProject "WatsonDogSNS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 820C50132281B997002B223F;
+			productRefGroup = 820C501D2281B997002B223F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				820C501B2281B997002B223F /* WatsonDogSNS */,
+				820C502F2281B999002B223F /* WatsonDogSNSTests */,
+				820C503A2281B999002B223F /* WatsonDogSNSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		820C501A2281B997002B223F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820C502A2281B999002B223F /* LaunchScreen.storyboard in Resources */,
+				820C50272281B999002B223F /* Assets.xcassets in Resources */,
+				820C50252281B997002B223F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820C502E2281B999002B223F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820C50392281B999002B223F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		820C50182281B997002B223F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820C50222281B997002B223F /* ViewController.swift in Sources */,
+				820C50202281B997002B223F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820C502C2281B999002B223F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820C50352281B999002B223F /* WatsonDogSNSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820C50372281B999002B223F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820C50402281B999002B223F /* WatsonDogSNSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		820C50322281B999002B223F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 820C501B2281B997002B223F /* WatsonDogSNS */;
+			targetProxy = 820C50312281B999002B223F /* PBXContainerItemProxy */;
+		};
+		820C503D2281B999002B223F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 820C501B2281B997002B223F /* WatsonDogSNS */;
+			targetProxy = 820C503C2281B999002B223F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		820C50232281B997002B223F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820C50242281B997002B223F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		820C50282281B999002B223F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820C50292281B999002B223F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		820C50422281B999002B223F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		820C50432281B999002B223F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		820C50452281B999002B223F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH2UHCDNT4;
+				INFOPLIST_FILE = WatsonDogSNS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KiyotoRyuman.WatsonDogSNS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		820C50462281B999002B223F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH2UHCDNT4;
+				INFOPLIST_FILE = WatsonDogSNS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KiyotoRyuman.WatsonDogSNS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		820C50482281B999002B223F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH2UHCDNT4;
+				INFOPLIST_FILE = WatsonDogSNSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KiyotoRyuman.WatsonDogSNSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatsonDogSNS.app/WatsonDogSNS";
+			};
+			name = Debug;
+		};
+		820C50492281B999002B223F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH2UHCDNT4;
+				INFOPLIST_FILE = WatsonDogSNSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KiyotoRyuman.WatsonDogSNSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatsonDogSNS.app/WatsonDogSNS";
+			};
+			name = Release;
+		};
+		820C504B2281B999002B223F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH2UHCDNT4;
+				INFOPLIST_FILE = WatsonDogSNSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KiyotoRyuman.WatsonDogSNSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatsonDogSNS;
+			};
+			name = Debug;
+		};
+		820C504C2281B999002B223F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH2UHCDNT4;
+				INFOPLIST_FILE = WatsonDogSNSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KiyotoRyuman.WatsonDogSNSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatsonDogSNS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		820C50172281B997002B223F /* Build configuration list for PBXProject "WatsonDogSNS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820C50422281B999002B223F /* Debug */,
+				820C50432281B999002B223F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		820C50442281B999002B223F /* Build configuration list for PBXNativeTarget "WatsonDogSNS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820C50452281B999002B223F /* Debug */,
+				820C50462281B999002B223F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		820C50472281B999002B223F /* Build configuration list for PBXNativeTarget "WatsonDogSNSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820C50482281B999002B223F /* Debug */,
+				820C50492281B999002B223F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		820C504A2281B999002B223F /* Build configuration list for PBXNativeTarget "WatsonDogSNSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820C504B2281B999002B223F /* Debug */,
+				820C504C2281B999002B223F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 820C50142281B997002B223F /* Project object */;
+}
