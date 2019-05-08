@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59C5E86EAAB9424141F415B5 /* Pods_WatsonDogSNSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7C65E5B0F82EDD41EB3CFF /* Pods_WatsonDogSNSUITests.framework */; };
+		7BAB2EA519BB0D22D2EA1BF2 /* Pods_WatsonDogSNSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB39FF73D626C4B523157808 /* Pods_WatsonDogSNSTests.framework */; };
 		820C50202281B997002B223F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C501F2281B997002B223F /* AppDelegate.swift */; };
 		820C50222281B997002B223F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C50212281B997002B223F /* ViewController.swift */; };
 		820C50252281B997002B223F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820C50232281B997002B223F /* Main.storyboard */; };
@@ -14,6 +16,16 @@
 		820C502A2281B999002B223F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820C50282281B999002B223F /* LaunchScreen.storyboard */; };
 		820C50352281B999002B223F /* WatsonDogSNSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C50342281B999002B223F /* WatsonDogSNSTests.swift */; };
 		820C50402281B999002B223F /* WatsonDogSNSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C503F2281B999002B223F /* WatsonDogSNSUITests.swift */; };
+		820C50522281C804002B223F /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820C50512281C804002B223F /* VisualRecognitionV3.framework */; };
+		820C50532281C804002B223F /* VisualRecognitionV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 820C50512281C804002B223F /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		820C50562281C816002B223F /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820C50552281C816002B223F /* SVProgressHUD.framework */; };
+		820C50572281C816002B223F /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 820C50552281C816002B223F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		820C50592281C8B1002B223F /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820C50582281C8B1002B223F /* RestKit.framework */; };
+		820C505A2281C8B1002B223F /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 820C50582281C8B1002B223F /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		820C505C2282453E002B223F /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C505B2282453E002B223F /* TimeLineViewController.swift */; };
+		820C505E228297DA002B223F /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C505D228297DA002B223F /* ShareViewController.swift */; };
+		820C506022829B81002B223F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C505F22829B81002B223F /* Post.swift */; };
+		8EC12BD24678F3AF91B40042 /* Pods_WatsonDogSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D7C62E7FE797F9DDF6AAB5 /* Pods_WatsonDogSNS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +45,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		820C50542281C804002B223F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				820C50572281C816002B223F /* SVProgressHUD.framework in Embed Frameworks */,
+				820C50532281C804002B223F /* VisualRecognitionV3.framework in Embed Frameworks */,
+				820C505A2281C8B1002B223F /* RestKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		32D7C62E7FE797F9DDF6AAB5 /* Pods_WatsonDogSNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatsonDogSNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7C65E5B0F82EDD41EB3CFF /* Pods_WatsonDogSNSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatsonDogSNSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F22999FC87EBD7AF1EA7A83 /* Pods-WatsonDogSNSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonDogSNSUITests.debug.xcconfig"; path = "Target Support Files/Pods-WatsonDogSNSUITests/Pods-WatsonDogSNSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		67854C4F2B1D55C36C9A3C51 /* Pods-WatsonDogSNSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonDogSNSTests.debug.xcconfig"; path = "Target Support Files/Pods-WatsonDogSNSTests/Pods-WatsonDogSNSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EFD6F8F3B10F00F3808C20A /* Pods-WatsonDogSNS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonDogSNS.debug.xcconfig"; path = "Target Support Files/Pods-WatsonDogSNS/Pods-WatsonDogSNS.debug.xcconfig"; sourceTree = "<group>"; };
 		820C501C2281B997002B223F /* WatsonDogSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonDogSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		820C501F2281B997002B223F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		820C50212281B997002B223F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +80,16 @@
 		820C503B2281B999002B223F /* WatsonDogSNSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatsonDogSNSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		820C503F2281B999002B223F /* WatsonDogSNSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonDogSNSUITests.swift; sourceTree = "<group>"; };
 		820C50412281B999002B223F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		820C50512281C804002B223F /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VisualRecognitionV3.framework; sourceTree = "<group>"; };
+		820C50552281C816002B223F /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = "<group>"; };
+		820C50582281C8B1002B223F /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
+		820C505B2282453E002B223F /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		820C505D228297DA002B223F /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		820C505F22829B81002B223F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		95E300CDB8C1345B0F073E08 /* Pods-WatsonDogSNSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonDogSNSTests.release.xcconfig"; path = "Target Support Files/Pods-WatsonDogSNSTests/Pods-WatsonDogSNSTests.release.xcconfig"; sourceTree = "<group>"; };
+		968E6895F187484BD74D0B17 /* Pods-WatsonDogSNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonDogSNS.release.xcconfig"; path = "Target Support Files/Pods-WatsonDogSNS/Pods-WatsonDogSNS.release.xcconfig"; sourceTree = "<group>"; };
+		9AAF76113C1710046DC6CCA0 /* Pods-WatsonDogSNSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonDogSNSUITests.release.xcconfig"; path = "Target Support Files/Pods-WatsonDogSNSUITests/Pods-WatsonDogSNSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EB39FF73D626C4B523157808 /* Pods_WatsonDogSNSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatsonDogSNSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820C50562281C816002B223F /* SVProgressHUD.framework in Frameworks */,
+				8EC12BD24678F3AF91B40042 /* Pods_WatsonDogSNS.framework in Frameworks */,
+				820C50522281C804002B223F /* VisualRecognitionV3.framework in Frameworks */,
+				820C50592281C8B1002B223F /* RestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BAB2EA519BB0D22D2EA1BF2 /* Pods_WatsonDogSNSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +116,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C5E86EAAB9424141F415B5 /* Pods_WatsonDogSNSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3223712219D2D918C0BA4131 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EFD6F8F3B10F00F3808C20A /* Pods-WatsonDogSNS.debug.xcconfig */,
+				968E6895F187484BD74D0B17 /* Pods-WatsonDogSNS.release.xcconfig */,
+				67854C4F2B1D55C36C9A3C51 /* Pods-WatsonDogSNSTests.debug.xcconfig */,
+				95E300CDB8C1345B0F073E08 /* Pods-WatsonDogSNSTests.release.xcconfig */,
+				5F22999FC87EBD7AF1EA7A83 /* Pods-WatsonDogSNSUITests.debug.xcconfig */,
+				9AAF76113C1710046DC6CCA0 /* Pods-WatsonDogSNSUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		820C50132281B997002B223F = {
 			isa = PBXGroup;
 			children = (
+				820C50582281C8B1002B223F /* RestKit.framework */,
+				820C50552281C816002B223F /* SVProgressHUD.framework */,
+				820C50512281C804002B223F /* VisualRecognitionV3.framework */,
 				820C501E2281B997002B223F /* WatsonDogSNS */,
 				820C50332281B999002B223F /* WatsonDogSNSTests */,
 				820C503E2281B999002B223F /* WatsonDogSNSUITests */,
 				820C501D2281B997002B223F /* Products */,
+				3223712219D2D918C0BA4131 /* Pods */,
+				D700B39DCF928485AFCEEBF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +166,9 @@
 			children = (
 				820C501F2281B997002B223F /* AppDelegate.swift */,
 				820C50212281B997002B223F /* ViewController.swift */,
+				820C505B2282453E002B223F /* TimeLineViewController.swift */,
+				820C505D228297DA002B223F /* ShareViewController.swift */,
+				820C505F22829B81002B223F /* Post.swift */,
 				820C50232281B997002B223F /* Main.storyboard */,
 				820C50262281B999002B223F /* Assets.xcassets */,
 				820C50282281B999002B223F /* LaunchScreen.storyboard */,
@@ -125,6 +195,16 @@
 			path = WatsonDogSNSUITests;
 			sourceTree = "<group>";
 		};
+		D700B39DCF928485AFCEEBF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32D7C62E7FE797F9DDF6AAB5 /* Pods_WatsonDogSNS.framework */,
+				EB39FF73D626C4B523157808 /* Pods_WatsonDogSNSTests.framework */,
+				3C7C65E5B0F82EDD41EB3CFF /* Pods_WatsonDogSNSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 820C50442281B999002B223F /* Build configuration list for PBXNativeTarget "WatsonDogSNS" */;
 			buildPhases = (
+				37B56D2B39F2A6BA82CE908A /* [CP] Check Pods Manifest.lock */,
 				820C50182281B997002B223F /* Sources */,
 				820C50192281B997002B223F /* Frameworks */,
 				820C501A2281B997002B223F /* Resources */,
+				FFF8A10AB4989316CF113052 /* [CP] Embed Pods Frameworks */,
+				820C50542281C804002B223F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 820C50472281B999002B223F /* Build configuration list for PBXNativeTarget "WatsonDogSNSTests" */;
 			buildPhases = (
+				5FFE470BCFA0463998A08231 /* [CP] Check Pods Manifest.lock */,
 				820C502C2281B999002B223F /* Sources */,
 				820C502D2281B999002B223F /* Frameworks */,
 				820C502E2281B999002B223F /* Resources */,
@@ -167,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 820C504A2281B999002B223F /* Build configuration list for PBXNativeTarget "WatsonDogSNSUITests" */;
 			buildPhases = (
+				6BF088539267EB98D2A6D1D8 /* [CP] Check Pods Manifest.lock */,
 				820C50372281B999002B223F /* Sources */,
 				820C50382281B999002B223F /* Frameworks */,
 				820C50392281B999002B223F /* Resources */,
@@ -251,6 +336,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37B56D2B39F2A6BA82CE908A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatsonDogSNS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FFE470BCFA0463998A08231 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatsonDogSNSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BF088539267EB98D2A6D1D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatsonDogSNSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFF8A10AB4989316CF113052 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatsonDogSNS/Pods-WatsonDogSNS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/EMAlertController/EMAlertController.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EMAlertController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatsonDogSNS/Pods-WatsonDogSNS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		820C50182281B997002B223F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +454,9 @@
 			files = (
 				820C50222281B997002B223F /* ViewController.swift in Sources */,
 				820C50202281B997002B223F /* AppDelegate.swift in Sources */,
+				820C505E228297DA002B223F /* ShareViewController.swift in Sources */,
+				820C505C2282453E002B223F /* TimeLineViewController.swift in Sources */,
+				820C506022829B81002B223F /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,10 +629,15 @@
 		};
 		820C50452281B999002B223F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EFD6F8F3B10F00F3808C20A /* Pods-WatsonDogSNS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KH2UHCDNT4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WatsonDogSNS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,10 +652,15 @@
 		};
 		820C50462281B999002B223F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968E6895F187484BD74D0B17 /* Pods-WatsonDogSNS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KH2UHCDNT4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WatsonDogSNS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +675,7 @@
 		};
 		820C50482281B999002B223F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67854C4F2B1D55C36C9A3C51 /* Pods-WatsonDogSNSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +697,7 @@
 		};
 		820C50492281B999002B223F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95E300CDB8C1345B0F073E08 /* Pods-WatsonDogSNSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +719,7 @@
 		};
 		820C504B2281B999002B223F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F22999FC87EBD7AF1EA7A83 /* Pods-WatsonDogSNSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +740,7 @@
 		};
 		820C504C2281B999002B223F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AAF76113C1710046DC6CCA0 /* Pods-WatsonDogSNSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_WatsonDogSNSUITests {
+  umbrella header "Pods-WatsonDogSNSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
