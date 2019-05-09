@@ -25,6 +25,7 @@
 		820C505C2282453E002B223F /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C505B2282453E002B223F /* TimeLineViewController.swift */; };
 		820C505E228297DA002B223F /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C505D228297DA002B223F /* ShareViewController.swift */; };
 		820C506022829B81002B223F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820C505F22829B81002B223F /* Post.swift */; };
+		820C50642282CA06002B223F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 820C50632282CA06002B223F /* GoogleService-Info.plist */; };
 		8EC12BD24678F3AF91B40042 /* Pods_WatsonDogSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D7C62E7FE797F9DDF6AAB5 /* Pods_WatsonDogSNS.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		820C505B2282453E002B223F /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		820C505D228297DA002B223F /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		820C505F22829B81002B223F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		820C50632282CA06002B223F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95E300CDB8C1345B0F073E08 /* Pods-WatsonDogSNSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonDogSNSTests.release.xcconfig"; path = "Target Support Files/Pods-WatsonDogSNSTests/Pods-WatsonDogSNSTests.release.xcconfig"; sourceTree = "<group>"; };
 		968E6895F187484BD74D0B17 /* Pods-WatsonDogSNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonDogSNS.release.xcconfig"; path = "Target Support Files/Pods-WatsonDogSNS/Pods-WatsonDogSNS.release.xcconfig"; sourceTree = "<group>"; };
 		9AAF76113C1710046DC6CCA0 /* Pods-WatsonDogSNSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonDogSNSUITests.release.xcconfig"; path = "Target Support Files/Pods-WatsonDogSNSUITests/Pods-WatsonDogSNSUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				820C50262281B999002B223F /* Assets.xcassets */,
 				820C50282281B999002B223F /* LaunchScreen.storyboard */,
 				820C502B2281B999002B223F /* Info.plist */,
+				820C50632282CA06002B223F /* GoogleService-Info.plist */,
 			);
 			path = WatsonDogSNS;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				820C502A2281B999002B223F /* LaunchScreen.storyboard in Resources */,
 				820C50272281B999002B223F /* Assets.xcassets in Resources */,
 				820C50252281B997002B223F /* Main.storyboard in Resources */,
+				820C50642282CA06002B223F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

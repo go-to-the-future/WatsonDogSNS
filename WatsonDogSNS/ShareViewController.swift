@@ -12,6 +12,7 @@ import VisualRecognitionV3
 import SVProgressHUD
 import Firebase
 import EMAlertController
+import RestKit
 class ShareViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextViewDelegate {
 
     @IBOutlet var textView: UITextView!
@@ -24,14 +25,14 @@ class ShareViewController: UIViewController,UIImagePickerControllerDelegate,UINa
     var postImageURL:URL!
     var passImage = UIImage()
     let apiKey = ""
-    let version = "2019-5-8"
+    let version = "2019-03-19"
     var dogOrNot:Bool! = true
     var resultString = String()
-    var classificationResult:[String] = []
     var userName = String()
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
+        cameraImageView.clipsToBounds = true
         PHPhotoLibrary.requestAuthorization{ (status) in
             
             switch(status){
@@ -90,24 +91,22 @@ class ShareViewController: UIViewController,UIImagePickerControllerDelegate,UINa
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         SVProgressHUD.show()
+        print("ぐるぐる")
         if let pickedImage = info[.originalImage] as? UIImage{
             
             self.cameraImageView.image = pickedImage
             let visualR = VisualRecognition(version: version, apiKey: apiKey, iamUrl: nil)
             let imageData = pickedImage.jpegData(compressionQuality: 1.0)
+            print("データできた")
             let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
             let fileURL = documentURL?.appendingPathComponent("tempImage.jpg")
             try! imageData?.write(to: fileURL!, options: [])
-            self.classificationResult = []
             
-            visualR.classify(imagesFile: imageData,
-                             imagesFilename: nil, imagesFileContentType: "ja",
-                             url: nil,
-                             threshold: nil,
-                             owners: nil,
-                             classifierIDs: ["default"],
-                             acceptLanguage: nil) { (response, error) in
-                                
+            print("URLできた")
+            visualR.classify(imagesFile: imageData, imagesFilename: nil, imagesFileContentType: "jpeg", url: nil, threshold: nil, owners: nil, classifierIDs: ["default"], acceptLanguage: "ja", headers: nil){ (response, error) in
+                                if let error = error {
+                                    print("★error=\(error)")
+                                }
                                 if let classifiedImages = response?.result {
                                     
                                     print(classifiedImages)
@@ -115,27 +114,22 @@ class ShareViewController: UIViewController,UIImagePickerControllerDelegate,UINa
                                     
                                     let classes = classifiedImages.images.first!.classifiers.first!.classes
                                     
-                                    for index in 1..<classes.count{
-                                        
-                                        self.classificationResult.append(classes[index].className)
-                                        if self.classificationResult.contains("犬"){
-                                            
-                                            DispatchQueue.main.async{
-                                                print("犬です")
-                                                self.dogOrNot = true
-                                                SVProgressHUD.dismiss()
-                                                
-                                            }
-                                        }else{
-                                            DispatchQueue.main.async{
-                                                print("犬ではないです")
-                                                self.dogOrNot = false
-                                                SVProgressHUD.dismiss()
-                                                
-                                            }
-                                            
+                                    self.dogOrNot = false
+                                    print("★classes=\(classes)") // ★追加★
+                                    for index in 0..<classes.count{
+                                        print("-----") // ★追加★
+                                        print("★index=\(index):" + classes[index].className) // ★追加★
+                                        if classes[index].className == "犬" {
+                                            print("犬です")
+                                            self.dogOrNot = true
+                                            break
                                         }
-                                        
+                                    }
+                                    if !self.dogOrNot {
+                                        print("犬ではないです")
+                                    }
+                                    DispatchQueue.main.async{
+                                        SVProgressHUD.dismiss()
                                     }
                                     
                                 }
@@ -147,31 +141,45 @@ class ShareViewController: UIViewController,UIImagePickerControllerDelegate,UINa
     func postData(){
         let rootRef = Database.database().reference(fromURL: "https://watsondogsns.firebaseio.com/").child("post")
         let storage = Storage.storage().reference(forURL: "gs://watsondogsns.appspot.com/")
-        let key = rootRef.child("User").childByAutoId().key
-        let imageRef = storage.child("User").child("\(key).jpg")
+        guard let key = rootRef.child("User").childByAutoId().key else {
+            print("error: key が取得できませんでした")
+            return
+        }
+        let imageRef = storage.child("Users").child("\(key).jpg")
+        
         var data:NSData = NSData()
         if let image = cameraImageView.image{
-            data = image.jpegData(compressionQuality: 0.01) as!NSData
-        
-        }
-        let uploadTask = imageRef.putData(data as Data, metadata: nil){(metadata, error) in
             
-            if error != nil {
+            data = image.jpegData(compressionQuality: 0.01)! as NSData
+        }
+        
+        let uploadTask = imageRef.putData(data as Data, metadata: nil) { (metaData, error) in
+            
+            if error != nil{
+                
                 SVProgressHUD.show()
                 return
             }
             
-            imageRef.downloadURL(completion: {(url, error) in
-                if url != nil {
-                    let feed = ["postImage": url?.absoluteString,"comment":self.textView.text,"fullName":self.userName] as! [String:Any]
+            imageRef.downloadURL(completion: { (url, error) in
+                
+                if url != nil{
+                    
+                    let feed = ["postImage":url?.absoluteString,"comment":self.textView.text,"fullName":self.userName] as [String:Any]
                     let postFeed = ["\(key)":feed]
                     rootRef.updateChildValues(postFeed)
                     SVProgressHUD.dismiss()
+                    
                 }
-            } )
+                
+            })
+            
         }
+        
         uploadTask.resume()
         self.dismiss(animated: true, completion: nil)
+        
+        
     }
     
     @IBAction func share(_ sender: Any) {
@@ -202,3 +210,4 @@ class ShareViewController: UIViewController,UIImagePickerControllerDelegate,UINa
     */
 
 }
+
